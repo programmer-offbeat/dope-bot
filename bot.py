@@ -9,4 +9,5 @@ client = commands.Bot(command_prefix='e!')
 async def on_ready():
   print(f"imded")
 
+client.load_extension('jishaku')
 client.run(os.getenv('TOKEN'))
