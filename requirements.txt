@@ -1,4 +1,3 @@
 discord
-os
 python-dotenv
 jishaku
