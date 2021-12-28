@@ -1,4 +1,6 @@
-import discord
+import discord,os
+from dotenv import load_dotenv
+from jishaku.cog import jishaku
 from discord.ext import commands
 
 client = commands.Bot(command_prefix='e!')
@@ -7,4 +9,4 @@ client = commands.Bot(command_prefix='e!')
 async def on_ready():
   print(f"imded")
 
-client.run()
+client.run(os.getenv('TOKEN'))
